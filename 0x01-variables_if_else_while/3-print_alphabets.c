@@ -10,14 +10,14 @@ int main(void)
 	char uletter = 'A';
 	char letter = 'a';
 
-	for (; uletter <= 'Z'; uletter++)
-	{
-		putchar(uletter);
-	}
-
 	for (; letter <= 'z'; letter++)
 	{
 		putchar(letter);
+	}
+
+	for (; uletter <= 'Z'; uletter++)
+	{
+		putchar(uletter);
 	}
 
 	putchar('\n');
