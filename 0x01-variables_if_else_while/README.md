@@ -5,3 +5,6 @@ s
 1- prints out the last digit of a given number and checks if it is greater than or is 0 or is less than 6 and not 0
 2- a program that prints the alphabet in lowercase, followed by a new line.
 3- a program that prints the alphabet in lowercase and uppercase, followed by a new line.
+4- a program that Print all the letters except q and e
+5- a program that prints all single digit numbers of base 10 starting from 0, followed by a new line.
+6- 
