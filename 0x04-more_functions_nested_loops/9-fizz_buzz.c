@@ -34,7 +34,7 @@ void main(void)
 		}
 		if (num == 100)
 		{
-			printf("%d\n", num);
+			printf("Buzz\n");
 		}
 	}
 }
