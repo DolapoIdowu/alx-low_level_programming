@@ -8,7 +8,7 @@
  *	For numbers which are multiples of both
  *	three and five print FizzBuzz.
  *
- * Returns: 0
+ * Return: Always 0 (sucess)
  */
 int main(void)
 {
