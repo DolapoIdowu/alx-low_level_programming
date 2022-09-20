@@ -13,7 +13,7 @@ int main(void)
 	{
 		myrand = (rand() % 125) + 1;
 		printf("%c", myrand);
-		total -= myrand
+		total -= myrand;
 	}
 	printf("%c", total);
 
