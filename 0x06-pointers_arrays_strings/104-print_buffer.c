@@ -29,6 +29,7 @@ void print_buffer(char *b, int size)
 				else
 					printf(" ");
 			}
+			printf(" ");
 			for (l = j; l < j + 10; l++)
 			{
 				if (l >= size)
@@ -38,7 +39,7 @@ void print_buffer(char *b, int size)
 				else
 					printf("%c", *(b + l));
 			}
-			printf(" ");
+			printf("\n");
 		}
 	}
 }
