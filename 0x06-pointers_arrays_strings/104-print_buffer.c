@@ -39,7 +39,7 @@ void print_buffer(char *b, int size)
 				else
 					printf("%c", *(b + l));
 			}
-			printf("\n");
+			printf(" ");
 		}
 	}
 }
