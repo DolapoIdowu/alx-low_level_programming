@@ -9,7 +9,7 @@
  */
 void print_buffer(char *b, int size)
 {
-	 int byte, i;
+	 int byte, index;
 
 	for (byte = 0; byte < size; byte += 10)
 	{
