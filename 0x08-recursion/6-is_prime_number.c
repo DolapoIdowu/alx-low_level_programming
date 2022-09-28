@@ -12,7 +12,7 @@ int prime_number_helper(int num, int factor)
 		return (0);
 	else if (num == factor)
 		return (1);
-	else if
+	else if (num > factor)
 		prime_number_helper(num, factor + 1);
 
 	return (1);
