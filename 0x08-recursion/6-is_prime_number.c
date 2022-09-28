@@ -13,7 +13,8 @@ int prime_number_helper(int num, int factor)
 	else if (num == factor)
 		return (1);
 	else if
-		return (prime_number_helper(num, factor + 1));
+		prime_number_helper(num, factor + 1);
+
 	return (1);
 }
 
