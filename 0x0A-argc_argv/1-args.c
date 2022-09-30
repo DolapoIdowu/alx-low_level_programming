@@ -11,9 +11,12 @@ int main(int argc, char *argv[])
 {
 	int count, i;
 
-	count = 0;
-	for (i = 1; i < argc; i++)
-		count += 1;
-	printf("%d\n", count);
+	if (argc > 0)
+	{
+		count = 0;
+		for (i = 1; i < argc; i++)
+			count += 1;
+		printf("%d\n", count);
+	}
 	return (0);
 }
