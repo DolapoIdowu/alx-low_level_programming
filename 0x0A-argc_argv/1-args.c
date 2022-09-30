@@ -9,14 +9,9 @@
  */
 int main(int argc, char *argv[])
 {
-	int count, i;
-
 	if (argc > 0)
 	{
-		count = 0;
-		for (i = 1; i < argc; i++)
-			count += 1;
-		printf("%d\n", count);
+		printf("%d\n", argc - 1);
 	}
 	return (0);
 }
