@@ -1,7 +1,6 @@
 #include "main.h"
 #include <stdio.h>
 #include <stdlib.h>
-#include <ctype.h>
 
 /**
  * main- prints the minimum number of coins to make
@@ -11,7 +10,7 @@
  * Return: 1 if @argc != 2, 0 if argument is
  *	negative, and also positive.
  */
-int main(int argc, char **argv)
+int main(int argc, char *argv[])
 {
 	int money;
 	int coin = 0;
@@ -19,6 +18,7 @@ int main(int argc, char **argv)
 	if (argc == 2)
 	{
 		money = atoi(argv[1]);
+
 		if (money < 0)
 		{
 			printf("%d\n", 0);
@@ -46,6 +46,7 @@ int main(int argc, char **argv)
 		}
 		if (money % 1 >= 0)
 			coin += money;
+
 		printf("%d\n", coin);
 		return (0);
 	}
