@@ -18,6 +18,7 @@ int main(int argc, char *argv[])
 
 	if (argc == 2)
 	{
+		money = atoi(argv[1]);
 		if (money < 0)
 		{
 			printf("%d\n", 0);
