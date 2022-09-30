@@ -12,7 +12,7 @@ int main(int argc, char *argv[])
 	int count, i;
 
 	count = 0;
-	for (i = 0; i < argc; i++)
+	for (i = 1; i < argc; i++)
 		count += 1;
 	printf("%d", count);
 	return (0);
