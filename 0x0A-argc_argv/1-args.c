@@ -5,7 +5,7 @@
  * main- prints the number of arguments aside from program name.
  * @argc: number of argument.
  * @argv: arrays of string argument.
- * Return: 0.
+ * Return: 0
  */
 int main(int argc, char *argv[])
 {
