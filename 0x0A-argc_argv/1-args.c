@@ -14,6 +14,6 @@ int main(int argc, char *argv[])
 	count = 0;
 	for (i = 1; i < argc; i++)
 		count += 1;
-	printf("%d", count);
+	printf("%d\n", count);
 	return (0);
 }
