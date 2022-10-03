@@ -17,7 +17,7 @@ char *_strdup(char *str)
 	unsigned int len, i;
 
 	len = 0;
-	while (s[len] != '\0')
+	while (str[len] != '\0')
 	{
 		++len;
 	}
