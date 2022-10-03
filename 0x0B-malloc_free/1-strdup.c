@@ -21,13 +21,16 @@ char *_strdup(char *str)
 	{
 		++len;
 	}
-	if (str == NULL)
+	if (str == 0)
 		return (NULL);
-	new_string = malloc(len * sizeof(char));
-	for (i = 0; i < len; i++)
+	new_string = malloc(len + 1 * sizeof(char));
+
+	if (new_string == 0)
+		return (NULL);
+	for (i = 0; i <= len; i++)
 	{
 		new_string[i] = str[i];
 	}
-	str[i] = '\0';
+	new_string[i] = '\0';
 	return (new_string);
 }
