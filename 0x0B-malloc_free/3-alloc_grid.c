@@ -14,7 +14,7 @@
 int **alloc_grid(int width, int height)
 {
 	int i, j;
-	int *d_array_ptr;
+	int **d_array_ptr;
 
 	if (width <= 0 || height <= 0)
 		return (NULL);
@@ -23,7 +23,7 @@ int **alloc_grid(int width, int height)
 		return (NULL);
 	for (i = 0; i < height; i++)
 	{
-		for (j = 0, j < width; j++)
+		for (j = 0; j < width; j++)
 		{
 			*(d_array_ptr + (i * width + j)) = 0;
 		}
