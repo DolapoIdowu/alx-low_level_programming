@@ -14,19 +14,20 @@
 int **alloc_grid(int width, int height)
 {
 	int i, j;
+	int *ptr;
 	int **d_array_ptr;
 
 	if (width <= 0 || height <= 0)
 		return (NULL);
-	d_array_ptr = malloc(width * height * sizeof(int));
+	ptr = malloc(width * height * sizeof(int));
+	if (ptr == 0)
+		return (NULL);
+	**d_array_ptr = malloc(sizeof(int*) * width);
 	if (d_array_ptr == 0)
 		return (NULL);
-	for (i = 0; i < height; i++)
+	for (i = 0; i < width; i++)
 	{
-		for (j = 0; j < width; j++)
-		{
-			*(d_array_ptr + (i * width + j)) = 0;
-		}
+		d_array_ptr[i] = ptr + (i * hieght);
 	}
 	return (d_array_ptr);
 }
