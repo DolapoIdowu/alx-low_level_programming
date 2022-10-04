@@ -13,7 +13,7 @@
  */
 int **alloc_grid(int width, int height)
 {
-	int i, j;
+	int i;
 	int *ptr;
 	int **d_array_ptr;
 
@@ -27,7 +27,7 @@ int **alloc_grid(int width, int height)
 		return (NULL);
 	for (i = 0; i < width; i++)
 	{
-		d_array_ptr[i] = ptr + (i * hieght);
+		d_array_ptr[i] = ptr + (i * height);
 	}
 	return (d_array_ptr);
 }
