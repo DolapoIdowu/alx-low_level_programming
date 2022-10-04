@@ -22,7 +22,7 @@ int **alloc_grid(int width, int height)
 	ptr = malloc(width * height * sizeof(int));
 	if (ptr == 0)
 		return (NULL);
-	d_array_ptr = malloc(sizeof(int*) * height);
+	d_array_ptr = malloc(sizeof(int *) * height);
 	if (d_array_ptr == 0)
 		return (NULL);
 	for (i = 0; i < height; i++)
