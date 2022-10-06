@@ -2,6 +2,25 @@
 #include <stdlib.h>
 
 /**
+ * copychar- copy character into an array.
+ * @s1: array to copy to.
+ * @c: char to copy.
+ * @n: size of @s1.
+ * Return: pointer to s1.
+ */
+char copychar(char *s1, char c, unsigned int n)
+{
+	unsigned int i = 0;
+
+	while (i < n)
+	{
+		s1[i] = c;
+		i++;
+	}
+	return (s1);
+}
+
+/**
  * _calloc- allocates memory for an array, using malloc.
  * @nmemb: size of array.
  * @size: size of the data type.
@@ -11,23 +30,12 @@
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
 	void *array_ptr;
-	unsigned int i;
 
 	if (nmemb == 0 || size == 0)
 		return (NULL);
 	array_ptr = malloc(nmemb * size);
 	if (array_ptr == NULL)
 		return (NULL);
-	if (size != sizeof(char))
-	{
-		for (i = 0; i < nmemb; i++)
-			array_ptr[i] = 0;
-	}	return (array_ptr);
-	else
-	{
-		for (i = 0; i < nmemb - 1; i++)
-			array_ptr[i] = 0;
-		array_ptr[i] = '\0';
-		return (array_ptr);
-	}
+	copychar(array_ptr, 0, nmemb);
+	return (array_ptr);
 }
