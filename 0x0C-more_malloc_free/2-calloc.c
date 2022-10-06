@@ -8,7 +8,7 @@
  * @n: size of @s1.
  * Return: pointer to s1.
  */
-char copychar(char *s1, char c, unsigned int n)
+char *copychar(char *s1, char c, unsigned int n)
 {
 	unsigned int i = 0;
 
