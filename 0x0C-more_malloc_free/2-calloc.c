@@ -36,6 +36,6 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	array_ptr = malloc(nmemb * size);
 	if (array_ptr == NULL)
 		return (NULL);
-	copychar(array_ptr, 0, nmemb);
+	copychar(array_ptr, 0, (nmemb * size));
 	return (array_ptr);
 }
